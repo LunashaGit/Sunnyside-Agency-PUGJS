@@ -10,4 +10,111 @@ html(lang="en")
         link(rel='preconnect', href='https://fonts.googleapis.com')
         link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin)
         link(href='https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap', rel='stylesheet')
-    
+    body
+        header.header 
+            img.header__img#logo(src='image/logo.svg' alt='SEO')
+            .header__menu#menuToggle
+                nav.header__nav(role='navigation')
+                    input.nav_input(type='checkbox')
+                    span 
+                    span 
+                    span 
+                    ul.nav__menu#menu
+                        li
+                            a(href='#') About
+                        li
+                            a(href='#') Services
+                        li
+                            a(href='#') Projects
+                        li
+                            a(href='#') Contact
+            h1.header__h1 WE ARE CREATIVES
+            figure
+                img.header__figure#down(src='image/icons/icon-arrow-down.svg', alt='SEO')
+        section.essential
+            div
+                picture
+                    source(media='(max-width: 799px)' srcset='./image/mobilep/image-transform.jpg')
+                    source(media='(max-width: 800px)' srcset='./image/photos/image-transform.jpg')
+                    img.essential__image(src='/image/photos/image-transform.jpg' alt='SEO')
+            .essential__size
+                h2.size__h2 Transform your brand
+                p.size__p We are a full-service creative agency specializing in helping brands grow fast. Engage you clients through compelling visuals that do most of the marketing for you.
+                a.size__a(href='#') LEARN MORE
+            div
+                picture
+                    source(media='(max-width: 799px)' srcset='./image/mobilep/image-stand-out.jpg')
+                    source(media='(max-width: 800px)' srcset='./image/photos/image-stand-out.jpg')
+                    img.essential__image(src='/image/photos/image-stand-out.jpg' alt='SEO')
+            .essential__size
+                h2.size__h2 Stand out to the right audience
+                p.size__p Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build an extend your brand in digital places.
+                a.size__a(href='#') LEARN MORE
+            .essential__back#a
+                h2.back__h2 Graphic Design
+                p.back__p Great design makes you memorable. We deliver artwork that underscores your brand message and caputres potential clients attention.
+            .essential__backb#b
+                h2.back__h2 Photography
+                p.back__p Increase your credibility by getting the most stunning, hight-quality photos that improve your business image.
+        section.client
+            .client__div
+                h2 CLIENT TESTIMONIALS
+            .client__tree#tree
+                .client__div 
+                    img.client__img(src='image/people/image-emily.jpg' alt='SEO')
+                    p.client__p#greydark We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                    h3.client__h3 Emily R.
+                    p.client__p#grey Marketing Director
+                .client__div 
+                    img.client__img(src='image/people/image-emily.jpg' alt='SEO')
+                    p.client__p#greydark Sunnyside's enthusiasm coupled with their keen intereset in our brand's success made it a satisfying and enjoyable experience.
+                    h3.client__h3 Thomas S.
+                    p.client__p#grey Chief Operating Officer
+                .client__div 
+                    img.client__img(src='image/people/image-emily.jpg' alt='SEO')
+                    p.client__p#greydark Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                    h3.client__h3 Jennie F.
+                    p.client__p#grey Businness Owner
+        section.four#four 
+            picture.four__picture
+                source(media='(max-width: 799px)' srcset='./image/mobilep/image-gallery-milkbottles.jpg')
+                source(media='(max-width: 800px)' srcset='./image/photos/image-gallery-milkbottles.jpg')
+                img.four__img(src='/image/mobilep/image-gallery-milkbottles.jpg' alt='SEO')
+            picture.four__picture
+                source(media='(max-width: 799px)' srcset='./image/mobilep/image-gallery-orange.jpg')
+                source(media='(max-width: 800px)' srcset='./image/photos/image-gallery-orange.jpg')
+                img.four__img(src='/image/mobilep/image-gallery-orange.jpg' alt='SEO')
+            picture.four__picture
+                source(media='(max-width: 799px)' srcset='./image/mobilep/image-gallery-cone.jpg')
+                source(media='(max-width: 800px)' srcset='./image/photos/image-gallery-cone.jpg')
+                img.four__img(src='/image/mobilep/image-gallery-cone.jpg' alt='SEO')
+            picture.four__picture
+                source(media='(max-width: 799px)' srcset='./image/mobilep/image-gallery-sugar-cubes.jpg')
+                source(media='(max-width: 800px)' srcset='./image/photos/image-gallery-sugarcubes.jpg')
+                img.four__img(src='/image/mobilep/image-gallery-sugar-cubes.jpg' alt='SEO')
+        footer.footer
+            div
+                figure.footer__figure
+                    img#sunnyside(src='image/logo_othercolor.svg' alt='SEO')
+            div
+                ul.footer__ul
+                    li
+                        a(href='#') About
+                    li
+                        a(href='#') Services
+                    li
+                        a(href='#') Projects
+            div
+                ul.footer__ul
+                    li
+                        a(href='#')
+                            img(src='image/icons/icon-facebook.svg' alt='SEO')
+                    li
+                        a(href='#')
+                            img(src='image/icons/icon-instagram.svg' alt='SEO')
+                    li
+                        a(href='#')
+                            img(src='image/icons/icon-twitter.svg' alt='SEO')
+                    li
+                        a(href='#')
+                            img(src='image/icons/icon-pinterest.svg' alt='SEO')
